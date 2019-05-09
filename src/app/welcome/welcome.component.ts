@@ -15,8 +15,8 @@ export class WelcomeComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log('Shall start the quiz component');
-    this.route.navigate(['/quiz']);
+    console.log('Shall start the register component');
+    this.route.navigate(['/register']);
   }
 
 }

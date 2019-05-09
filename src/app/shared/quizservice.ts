@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Question } from './quiz';
+import { HttpClient } from 'selenium-webdriver/http';
 
 export class QuizService{
 
+    // rootUrl: string = 'http://localhost:4444';
     score:number;
     questionNumber:number;
     correctAnswerCount:number;
@@ -59,5 +61,24 @@ export class QuizService{
 
     getAnswers(){
         return this.questionlist;
+    }
+
+    registerParticipant(name: string, email: string) {
+
+        // var body = {
+        //     Name: name,
+        //     Email: email
+        // }
+
+        //return this.http.send(this.rootUrl + '/api/registerParticipant', body);
+        
+        /*
+        HTTP calls to a WebAPI from here
+        ex: 
+        return this.http.post(this.rootUrl + '/api/registerParticipant',body)
+        */
+
+       console.log('User ' + name + ' with email address ' + email + ' registered');
+
     }
 }

@@ -26,4 +26,8 @@ export class ScoreboardComponent implements OnInit {
     })
   }
 
+  onRestart(){
+    this.router.navigate(['/welcome']);
+  }
+
 }

@@ -8,8 +8,10 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import {RouterModule} from '@angular/router';
 import { appRoutes } from './routes';
 import { ResultComponent } from './result/result.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
 import { QuizService } from './shared/quizservice';
+import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { QuizService } from './shared/quizservice';
     WelcomeComponent,
     QuizComponent,
     ScoreboardComponent,
-    ResultComponent
+    ResultComponent,
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

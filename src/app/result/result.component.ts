@@ -10,6 +10,6 @@ export class ResultComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }
